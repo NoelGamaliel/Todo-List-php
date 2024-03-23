@@ -1,6 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+    /* background: url() #eeeeee repeat-x top center; */
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.block1 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.block1 form label {
+    margin-bottom: 0.6rem;
+}
+
+.block1 form input[type="text"], [type="submit"], [type="date"] {
+    padding:5px 9px;
+    margin-bottom: 0.5rem;
+}
+
+.block1 form select {
+    padding:5px 9px;
+    margin-bottom: 1rem;
+}
+
+.block2 table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #eeeeee;
 }

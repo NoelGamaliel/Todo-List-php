@@ -25,21 +25,22 @@
 						<label for="name_task">Name task :</label>
 						<input type="text" name="name_task" id="name_task" require>
 
-						<label for="due_date">Name task :</label>
+						<label for="due_date">Due_date :</label>
 						<input type="date" name="due_date" id="due_date" require>
 
 						<label for="name_task">Status :</label>
 						<select name="status" id="">
 							<option value="0">Select</option>
-							<option value="1">finished</option>
-							<option value="2">en cours</option>
-							<option value="3">warning</option>
+							<option value="1">In progress</option>
+							<option value="2">Suspended</option>
+							<option value="3">Cancelled</option>
+							<option value="3">Completed</option>
 						</select>
 
 						<label for="priority">Priority :</label>
 						<select name="priority" id="">
 							<option value="0">Select your priority</option>
-							<option value="1">high</option>
+							<option value="1">High</option>
 							<option value="2">Medium</option>
 							<option value="3">Low</option>
 						</select>
@@ -60,6 +61,9 @@
 								<th>Action</th>
 							</tr>
 						</thead>
+						<tbody>
+							
+                        </tbody>
 					</table>
 				</div>
 			</div>
