@@ -1,11 +1,3 @@
-<?php
-
-	include '_cnx/_cnx.php';
-
-	echo '<h1>My Todo List with PHP</h1>';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,14 +13,17 @@
 		<div class="container">
 			<div class="box">
 				<div class="block1">
+					<!-- Inclusing my php code -->
+					<?php 	echo '<h1>My Todo List with PHP</h1>'; ?>
+
 					<form action="add.php" method="post">
 						<label for="name_task">Name task :</label>
-						<input type="text" name="name_task" id="name_task" require>
+						<input type="text" name="name" id="name_task" require>
 
 						<label for="due_date">Due_date :</label>
 						<input type="date" name="due_date" id="due_date" require>
 
-						<label for="name_task">Status :</label>
+						<label for="status">Status :</label>
 						<select name="status" id="">
 							<option value="0">Select</option>
 							<option value="1">In progress</option>
@@ -45,7 +40,7 @@
 							<option value="3">Low</option>
 						</select>
 
-						<input type="submit" value="Add">
+						<input type="submit" value="Add" name="add">
 					</form>
 				</div>
 
@@ -62,7 +57,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							
+
                         </tbody>
 					</table>
 				</div>
