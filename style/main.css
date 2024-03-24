@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -54,4 +54,13 @@ body {
     table-layout: fixed;
     border-collapse: collapse;
     border: 1px solid #eeeeee;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #f1f1f1;
 }
